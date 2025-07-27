@@ -17,8 +17,11 @@ Let’s get real comfy working with numbers and text, 'cause your whole Java lif
 ## 📁 Folder Structure
 
 /day-02-strings-numbers/
+
 ├── README.md 📝
+
 ├── AgeCalculator.java 👶⏳
+
 └── DataTypes.java 🧮🧠
 
 
