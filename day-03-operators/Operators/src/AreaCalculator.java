@@ -1,24 +1,44 @@
-import java.util.Scanner;;
+import java.util.Scanner;
 
 public class AreaCalculator {
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println("====== 🍄 Welcome to the Mini Area Calculator 🧠 ======");
 
-        System.out.println("====== Welcome To Mini Area Calculator🍄 =======");
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("Enter the shape name (rectangle, triangle, circle): ");
+            String shapeName = input.nextLine().toLowerCase();
 
-        System.out.print("Enter the name of the shape we are trying calculate: ");
-        String shapeName = input.nextLine();
+            double area = 0;
 
-        System.out.print("Enter the length (cm): ");
-        Double length = input.nextDouble();
+            switch (shapeName) {
+                case "rectangle":
+                    System.out.print("Enter the length (cm): ");
+                    double length = input.nextDouble();
+                    System.out.print("Enter the width (cm): ");
+                    double width = input.nextDouble();
+                    area = length * width;
+                    break;
 
-        System.out.print("Enter the width (cm): ");
-        Double width = input.nextDouble();
+                case "triangle":
+                    System.out.print("Enter the base (cm): ");
+                    double base = input.nextDouble();
+                    System.out.print("Enter the height (cm): ");
+                    double height = input.nextDouble();
+                    area = 0.5 * base * height;
+                    break;
 
-        Double areaTotal = length * width;
+                case "circle":
+                    System.out.print("Enter the radius (cm): ");
+                    double radius = input.nextDouble();
+                    area = Math.PI * radius * radius;
+                    break;
 
-        System.out.print("The Area of the " + shapeName + " is: " + areaTotal + "cm");
+                default:
+                    System.out.println("⚠️ Unknown shape. Please enter either rectangle, triangle, or circle.");
+                    return;
+            }
 
-        input.close();
+            System.out.printf("✅ The area of the %s is: %.2f cm²\n", shapeName, area);
+        }
     }
 }
