@@ -46,10 +46,10 @@ Enter the height (cm): 5
 
 ```
 
+## 🔣 Formula Recap
+
 ```
 ---
-
-## 🔣 Formula Recap
 
 | Shape     | Formula                         |
 |-----------|---------------------------------|
