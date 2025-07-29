@@ -22,6 +22,16 @@ public class GradeChecker {
 
         if (overallMark >= 90){
             System.out.println("Okay " + name + " you got " + studentMark + " in your " + moduleName + " which was out of " + testMark + ", so you got " + overallMark + "%, Congrats, you got an A+");
+        } else if(overallMark >= 80){
+            System.out.println("Okay " + name + " you got " + studentMark + " in your " + moduleName + " which was out of " + testMark + ", so you got " + overallMark + "%, Congrats, you got an A-");
+        } else if(overallMark >= 70){
+            System.out.println("Okay " + name + " you got " + studentMark + " in your " + moduleName + " which was out of " + testMark + ", so you got " + overallMark + "%, Congrats, you got a C");
+        } else if(overallMark >= 60){
+            System.out.println("Okay " + name + " you got " + studentMark + " in your " + moduleName + " which was out of " + testMark + ", so you got " + overallMark + "%, Congrats, you got a D+");
+        } else if(overallMark >= 50){
+            System.out.println("Okay " + name + " you got " + studentMark + " in your " + moduleName + " which was out of " + testMark + ", so you got " + overallMark + "%, Congrats, you got a D");
+        } else {
+            System.out.println("Okay " + name + " you got " + studentMark + " in your " + moduleName + " which was out of " + testMark + ", so you got " + overallMark + "%, 😢 Sorry, you got an F. But hey, you can bounce back!");
         }
 
         input.close();
