@@ -1,4 +1,4 @@
-import java.util.Scanner;;
+import java.util.Scanner;
 
 public class GradeChecker {
     public static void main(String[] args){
@@ -18,7 +18,7 @@ public class GradeChecker {
         System.out.print("What was the test out of: ");
         int testMark = input.nextInt();
 
-        int overallMark = (studentMark / testMark) * 100;
+        double overallMark = ((double) studentMark / testMark) * 100;
 
         if (overallMark >= 90){
             System.out.println("Okay " + name + " you got " + studentMark + " in your " + moduleName + " which was out of " + testMark + ", so you got " + overallMark + "%, Congrats, you got an A+");
