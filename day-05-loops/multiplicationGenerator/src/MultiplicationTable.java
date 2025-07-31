@@ -17,6 +17,8 @@ public class MultiplicationTable {
                 System.out.println(result);
             }
 
+            input.nextLine();
+
             //ask if they want to continue or not
             System.out.print("\nWanna run another table? (yes/no): ");
             String answer = input.nextLine().trim().toLowerCase();
