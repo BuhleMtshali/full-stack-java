@@ -1,38 +1,35 @@
 import java.util.Scanner;
 
 public class MultiplicationTable {
-    public static void main(String[] args){
-
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("===== Welcome To My Mini Multiplication Calculator🧮 =====");
-        
-        while (true) {
-            System.out.print("Enter the number for the Multiplication table: ");
-            int multicationNumber = input.nextInt();
+        System.out.println("🌟===== Welcome To My Mini Multiplication Calculator 🧮✨ =====");
 
-            for(int i = 1; i <= 11; i++){
-                int result = multicationNumber * i;
-                System.out.println("\nMultiplication for " + multicationNumber + " x " + i + ":");
-                System.out.println(result);
+        while (true) {
+            System.out.print("\n🔢 Enter the number for the multiplication table: ");
+            int multiplicationNumber = input.nextInt();
+
+            System.out.println("\n📊 Multiplication Table for " + multiplicationNumber + ":");
+            for (int i = 1; i <= 11; i++) {
+                int result = multiplicationNumber * i;
+                System.out.println("➡️ " + multiplicationNumber + " x " + i + " = " + result);
             }
 
-            input.nextLine();
+            input.nextLine(); // clear the buffer
 
-            //ask if they want to continue or not
-            System.out.print("\nWanna run another table? (yes/no): ");
+            // Ask if they want to continue
+            System.out.print("\n❓ Wanna run another table? (yes/no): ");
             String answer = input.nextLine().trim().toLowerCase();
 
-            if(answer.equals("no")){
-                System.out.println("Thank you for trying my Mini Multiplication Tracker!");
+            if (answer.equals("no")) {
+                System.out.println("\n🙏 Thank you for using my Mini Multiplication Tracker! ✨\n🚀 Keep multiplying greatness. Byeeee! 👋😎");
                 break;
             } else {
-                System.out.println("\n ---- Lets run another table: ");
+                System.out.println("\n🔁 Okayyy let’s run another one! 🎉");
             }
-
         }
 
-            
         input.close();
     }
 }
