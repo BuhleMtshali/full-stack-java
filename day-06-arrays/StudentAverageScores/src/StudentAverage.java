@@ -13,7 +13,7 @@ public class StudentAverage {
         int[] grades = new int[maxGrade];
 
         for(int i = 0; i < maxGrade; i++){
-            System.out.print("Enter grade for student #" + (i + 1) + ":");
+            System.out.print("Enter grade for student #" + (i + 1) + ": ");
             grades[i] = input.nextInt();
         }
 
