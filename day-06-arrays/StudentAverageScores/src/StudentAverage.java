@@ -22,13 +22,12 @@ public class StudentAverage {
             for(int i = 0; i < maxGrade; i++){
                 System.out.print("Enter grade for student #" + (i + 1) + ": ");
                 grades[i] = input.nextInt();
-
-            }
-
-            System.out.println("\nHere are the grades you entered: ");
-            for(int grade : grades){
+                
+                for(int grade : grades){
                     sum += grade;
                 }
+            }
+
 
             double avarage = sum / grades.length;
             System.out.print("\n===== Thank you for Trying The Grade Checker📇 =====");
