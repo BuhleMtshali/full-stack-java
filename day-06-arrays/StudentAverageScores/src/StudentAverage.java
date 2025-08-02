@@ -1,57 +1,51 @@
 import java.util.Scanner;
-//import java.util.ArrayList;
 
 public class StudentAverage {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        System.out.println("========= Welcome to My Mini Student Average Checker🍄 ======");
-        System.out.println("How to use it: ");
-        System.out.println("1. Enter the number of students, you want to calculate their avarage, then, enter ");
-        System.out.println("2. Next, enter the final grade for each student, and boom, you'll have your average!!!");
 
-        //starting the while loop
+        System.out.println("========= 🎓 Welcome to My Mini Student Average Checker 🍄 ======");
+        System.out.println("How to use it:");
+        System.out.println("1️⃣ Enter how many students’ grades you want to average");
+        System.out.println("2️⃣ Enter each student’s final grade");
+        System.out.println("3️⃣ Boom 💥 You'll get the average!");
+
+        // Start while loop
         while (true) {
-
-            System.out.print("How Many student grades do you want to add: ");
+            System.out.print("\nHow many student grades do you want to add? ");
             int maxGrade = input.nextInt();
+            input.nextLine(); // 👈 eat the leftover newline
 
             int[] grades = new int[maxGrade];
-
             double sum = 0;
 
-            for(int i = 0; i < maxGrade; i++){
+            // 🧮 Collect grades
+            for (int i = 0; i < maxGrade; i++) {
                 System.out.print("Enter grade for student #" + (i + 1) + ": ");
                 grades[i] = input.nextInt();
-
-                for(int grade : grades){
-                    System.out.print("Grade for Student #" + (i + 1) + ": " + grade);
-                    sum += grade;
-                }
+                sum += grades[i];
             }
 
+            double average = sum / grades.length;
 
-            double avarage = sum / grades.length;
-            System.out.print("\n===== Thank you for Trying The Grade Checker📇 =====");
-            System.out.print("Number of Students: " + grades.length);
-            System.out.print("Grade Average: " + avarage + "%");
+            // 🎉 Show results
+            System.out.println("\n===== 📝 Thank you for using the Grade Checker 📇 =====");
+            System.out.println("👥 Number of Students: " + grades.length);
+            System.out.printf("📊 Grade Average: %.2f%%\n", average);
 
-            input.nextInt();
+            input.nextLine(); // 👈 eat the leftover newline again
 
-            //asking if they wanna continue with the loop
-            System.out.println("\nWanna run again?");
+            // 🔁 Ask to continue
+            System.out.print("\n🔄 Wanna run it again? (yes/no): ");
             String answer = input.nextLine().trim().toLowerCase();
 
-            if(answer.equals("no")){
-                System.out.println("\nThank you for trying my mini grade checker");
+            if (answer.equals("no")) {
+                System.out.println("\n👋 Thanks for using the Mini Grade Checker. Bye!");
                 break;
             } else {
-                System.out.println("\nOkay, lets give it another round!!!");
+                System.out.println("\n🎬 Okay! Let's go another round...");
             }
-
-
         }
-        
-
 
         input.close();
     }
