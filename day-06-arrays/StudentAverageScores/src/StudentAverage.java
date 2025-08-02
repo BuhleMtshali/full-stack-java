@@ -22,8 +22,9 @@ public class StudentAverage {
             for(int i = 0; i < maxGrade; i++){
                 System.out.print("Enter grade for student #" + (i + 1) + ": ");
                 grades[i] = input.nextInt();
-                
+
                 for(int grade : grades){
+                    System.out.print("Grade for Student #" + (i + 1) + ": " + grade);
                     sum += grade;
                 }
             }
