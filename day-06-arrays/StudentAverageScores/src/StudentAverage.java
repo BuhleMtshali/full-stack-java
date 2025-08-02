@@ -12,6 +12,8 @@ public class StudentAverage {
 
         // Start while loop
         while (true) {
+            System.out.print("Enter the name of the module you want to check the avarege for: ");
+            String module = input.nextLine();
             System.out.print("\nHow many student grades do you want to add? ");
             int maxGrade = input.nextInt();
             input.nextLine(); // 👈 eat the leftover newline
@@ -30,6 +32,7 @@ public class StudentAverage {
 
             // 🎉 Show results
             System.out.println("\n===== 📝 Thank you for using the Grade Checker 📇 =====");
+            System.out.println("📚Module Name: " + module);
             System.out.println("👥 Number of Students: " + grades.length);
             System.out.printf("📊 Grade Average: %.2f%%\n", average);
 
