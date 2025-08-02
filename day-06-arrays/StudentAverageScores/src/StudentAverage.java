@@ -6,7 +6,7 @@ public class StudentAverage {
 
         //looping through the array
         for(int grade : grades){
-            System.out.println("Here is the grades: " + grade);
+            System.out.println(grade);
         }
     }
 }
