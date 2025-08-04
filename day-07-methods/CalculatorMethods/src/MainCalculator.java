@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculator{
+class Calculator{
 
     public static double add(double num1, double num2){
         return num1 + num2;
@@ -28,6 +28,20 @@ public class Calculator{
 public class MainCalculator {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+
+        System.out.println("==== Welcome to My Modulated Java Calculator👾 ======");
+
+        System.out.print("Enter your first number: ");
+        double numberOne = input.nextDouble();
+
+        System.out.print("Choose an operator (+, -, *, /)");
+        char operator = input.next().charAt(0);
+
+        System.out.print("Enter your second number: ");
+        double numberTwo = input.nextDouble();
+
+        
+
 
         input.close();
     }
