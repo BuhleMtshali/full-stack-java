@@ -40,9 +40,28 @@ public class MainCalculator {
         System.out.print("Enter your second number: ");
         double numberTwo = input.nextDouble();
 
-        
+        double result;
 
+        switch (operator) {
+            case '+':
+                result = Calculator.add(numberOne, numberTwo);
+                break;
+            case '-':
+                result = Calculator.subtract(numberOne, numberTwo);
+                break;
+            case '*':
+                result = Calculator.multiply(numberOne, numberTwo);
+                break;
+            case '/':
+                result = Calculator.divide(numberOne, numberTwo);
+                break;
+            default:
+                System.out.println("Invalid operator");
+                return;
+                
+        }
 
+        System.out.println("Result: " + result);
         input.close();
     }
 }
