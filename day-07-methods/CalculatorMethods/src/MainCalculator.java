@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Calculator{
 
     public static double add(double num1, double num2){
@@ -31,37 +30,51 @@ public class MainCalculator {
 
         System.out.println("==== Welcome to My Modulated Java Calculator👾 ======");
 
-        System.out.print("Enter your first number: ");
-        double numberOne = input.nextDouble();
+        while (true) {
+            System.out.print("Enter your first number: ");
+            double numberOne = input.nextDouble();
 
-        System.out.print("Choose an operator (+, -, *, /)");
-        char operator = input.next().charAt(0);
+            System.out.print("Choose an operator (+, -, *, /)");
+            char operator = input.next().charAt(0);
 
-        System.out.print("Enter your second number: ");
-        double numberTwo = input.nextDouble();
+            System.out.print("Enter your second number: ");
+            double numberTwo = input.nextDouble();
 
-        double result;
+            double result;
 
-        switch (operator) {
-            case '+':
-                result = Calculator.add(numberOne, numberTwo);
-                break;
-            case '-':
-                result = Calculator.subtract(numberOne, numberTwo);
-                break;
-            case '*':
-                result = Calculator.multiply(numberOne, numberTwo);
-                break;
-            case '/':
-                result = Calculator.divide(numberOne, numberTwo);
-                break;
-            default:
-                System.out.println("Invalid operator");
-                return;
+            switch (operator) {
+                case '+':
+                    result = Calculator.add(numberOne, numberTwo);
+                    break;
+                case '-':
+                    result = Calculator.subtract(numberOne, numberTwo);
+                    break;
+                case '*':
+                    result = Calculator.multiply(numberOne, numberTwo);
+                    break;
+                case '/':
+                    result = Calculator.divide(numberOne, numberTwo);
+                    break;
+                default:
+                    System.out.println("Invalid operator");
+                    return;
+                    
+            }
+
+                System.out.println("Result: " + result);
                 
+                System.out.print("\nWanna make another calculation? (yes/no): ");
+                String answer = input.nextLine().trim().toLowerCase();
+
+                if(answer.equals("no")){
+                    System.out.println("==== Thank you trying my modulated Calculator👾 =====");
+                    break;
+                } else {
+                    System.out.println("\nOkay, lets go for another round!!!");
+                }
         }
 
-        System.out.println("Result: " + result);
+        
         input.close();
     }
 }
