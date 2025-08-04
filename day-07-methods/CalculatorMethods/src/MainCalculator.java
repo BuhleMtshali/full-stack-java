@@ -62,6 +62,8 @@ public class MainCalculator {
             }
 
                 System.out.println("Result: " + result);
+
+                input.nextLine();
                 
                 System.out.print("\nWanna make another calculation? (yes/no): ");
                 String answer = input.nextLine().trim().toLowerCase();
