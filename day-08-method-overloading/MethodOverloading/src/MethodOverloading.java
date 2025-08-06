@@ -22,6 +22,8 @@ public class MethodOverloading {
         Scanner input = new Scanner(System.in);
 
        //creating a new object
+       Greeting greet = new Greeting();
+       greet.sayHello("Buhle", 23);
 
         input.close();
     }
