@@ -1,6 +1,12 @@
 class Greeting{
 
-    
+   public void sayHello(){
+    System.out.println("Hello there!");
+   } 
+
+   public void sayHello(String name){
+    System.out.println("Hello " + name);
+   }
 }
 
 
