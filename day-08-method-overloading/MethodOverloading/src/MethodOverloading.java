@@ -23,6 +23,14 @@ public class MethodOverloading {
 
        //creating a new object
        Greeting greet = new Greeting();
+
+       //first method
+       greet.sayHello();
+
+       //second method
+       greet.sayHello("Buhle");
+
+       //third method
        greet.sayHello("Buhle", 23);
 
         input.close();
