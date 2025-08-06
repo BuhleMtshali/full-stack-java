@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Greeting{
 
    public void sayHello(){
@@ -12,6 +14,6 @@ class Greeting{
 
 public class MethodOverloading {
     public static void main(String[] args){
-        System.out.println("hello");
+        Scanner input = new Scanner(System.in);
     }
 }
