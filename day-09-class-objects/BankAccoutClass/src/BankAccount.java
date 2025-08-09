@@ -91,7 +91,7 @@ public class BankAccount {
             System.out.print("\nChoose an account Type(savings, cheque, credit): ");
             userAccountType = input.nextLine();
 
-            if(userAccountType.trim().isEmpty() && userAccountType != null){
+            if(userAccountType.trim() != null){
                 System.out.println("\n✅ Account Type number captured correctly");
                 break;
             } else {
