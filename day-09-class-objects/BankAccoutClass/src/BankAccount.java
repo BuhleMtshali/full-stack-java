@@ -56,26 +56,32 @@ public class BankAccount {
 
         
         //START THE WHILE LOOP LOOP FOR VALIDATING USER DETAILS
-        while (true) {    
-            //System.out.println("🚫Invalid input, Please try again.");
-            
+        while (true) {
             System.out.print("Enter the name you want to register your account with(at least 3 characters): ");
             userName = input.nextLine();
 
-            System.out.print("Enter your account number(at least 5-digits): ");
-            userAccountNumber = input.nextLine();
-
-            System.out.print("Choose an account Type(savings, cheque, credit): ");
-            userAccountType = input.nextLine();
-
-            System.out.print("Enter PIN (exactly 5 digit): ");
-            userPin = input.nextLine();
-
-            if(userName.length() > 3 && userAccountNumber.length() >= 5 && userAccountNumber != null && userPin.length() == 5){
-                System.out.println("✅ Details entered correctly");
+            if(userName.length() >= 3){
+                System.out.print("✅ Name captured correctly");
                 break;
+            } else {
+                System.out.println("🚫Invalid input please try again");
             }
+            
         }
+            //System.out.print("Enter your account number(at least 5-digits): ");
+            //userAccountNumber = input.nextLine();
+
+            //System.out.print("Choose an account Type(savings, cheque, credit): ");
+            //userAccountType = input.nextLine();
+
+            //System.out.print("Enter PIN (exactly 5 digit): ");
+            //userPin = input.nextLine();
+
+            //if(userName.length() > 3 && userAccountNumber.length() >= 5 && userAccountType != null && userPin.length() == 5){
+              //  System.out.println("✅ Details entered correctly");
+                
+            //}
+        
 
         
 
