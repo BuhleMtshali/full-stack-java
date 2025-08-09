@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 class Bank{
    double amount = 1000;
+   String accountHolder;
+   String accountNumber;
 
    public void deposit(double addValue){
     this.amount += addValue; 
@@ -16,8 +18,14 @@ class Bank{
    }
 
    public void transfer( String recipientName, String accountNumber, double tranferValue ){
-    if (amount > 0 && accountNumber.length() >= 5){
+    if (this.amount > 0 && this.amount < tranferValue && accountNumber.length() >= 5){
         this.amount -= tranferValue;
+    }
+   }
+
+   public void payBills(String billName, String billAccountNumber, double billAmount){
+    if (this.amount > 0 && this.amount > billAmount){
+        this.amount -= billAmount;
     }
    }
 }
