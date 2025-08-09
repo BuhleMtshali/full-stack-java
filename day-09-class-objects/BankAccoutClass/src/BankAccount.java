@@ -59,28 +59,28 @@ public class BankAccount {
 
         //1. Validating username
         while (true) {
-            System.out.print("Enter the name you want to register your account with(at least 3 characters): ");
+            System.out.print("\nEnter the name you want to register your account with(at least 3 characters): ");
             userName = input.nextLine();
 
             if(userName.length() >= 3){
-                System.out.print("✅ Name captured correctly");
+                System.out.println("\n✅ Name captured correctly");
                 break;
             } else {
-                System.out.println("🚫Invalid input please try again");
+                System.out.println("\n🚫Invalid input please try again");
             }
             
         }
 
         //validating account number
         while (true) {
-            System.out.print("Enter your account number (at least 5-digits): ");
+            System.out.print("\nEnter your account number (at least 5-digits): ");
             userAccountNumber = input.nextLine();
 
             if(userAccountNumber.length() >= 5){
-                System.out.print("✅ Account number captured correctly");
+                System.out.println("\n✅ Account number captured correctly");
                 break;
             } else {
-                System.out.println("🚫Invalid input please try again");
+                System.out.println("\n🚫Invalid input please try again");
             }
 
         }
@@ -88,11 +88,11 @@ public class BankAccount {
 
         //VALIDATING ACCOUNT TYPE
         while (true) {
-            System.out.print("Choose an account Type(savings, cheque, credit): ");
+            System.out.print("\nChoose an account Type(savings, cheque, credit): ");
             userAccountType = input.nextLine();
 
             if(userAccountType.trim().isEmpty() && userAccountType != null){
-                System.out.print("✅ Account Type number captured correctly");
+                System.out.println("\n✅ Account Type number captured correctly");
                 break;
             } else {
                 System.out.println("🚫Invalid input please try again");
@@ -102,14 +102,14 @@ public class BankAccount {
 
         //VALIDATING THE PIN
         while (true) {
-            System.out.print("Enter PIN (exactly 5 digit): ");
+            System.out.print("\nEnter PIN (exactly 5 digit): ");
             userPin = input.nextLine();
 
             if(userPin.trim().length() == 5 && userPin.matches("\\d{5}")){
-                System.out.print("✅ Account Pin number captured correctly");
+                System.out.println("\n✅ Account Pin number captured correctly");
                 break;
             } else {
-                System.out.println("🚫Pin has to be 5-digits");
+                System.out.println("\n🚫Pin has to be 5-digits");
             }
         }
 
