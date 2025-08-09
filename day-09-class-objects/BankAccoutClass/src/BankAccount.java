@@ -4,6 +4,7 @@ class Bank{
    double amount = 1000;
    String accountHolder;
    String accountNumber;
+   String pin;
 
    public void deposit(double addValue){
     this.amount += addValue; 
