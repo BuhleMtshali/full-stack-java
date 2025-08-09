@@ -4,6 +4,7 @@ class Bank{
    double amount = 1000;
    String accountHolder;
    String accountNumber;
+   String accountType;
    String pin;
 
    public void deposit(double addValue){
@@ -47,8 +48,32 @@ public class BankAccount {
         System.out.println("\nLet's get your details first!");
 
 
-        //get the user details
-        System.out.print("Enter ");
+        //Storing the user details in variables
+        String userName = "";
+        String userAccountNumber = "";
+        String userAccountType = "";
+        String userPin = "";
+
+        
+        //START THE WHILE LOOP LOOP FOR VALIDATING USER DETAILS
+        while (!(userName.length() >= 3 && 
+                userAccountNumber.length() >= 5 && 
+                userPin.length() == 5)) {
+                
+            System.out.println("🚫Invalid input, Please try again.");
+            
+            System.out.print("Enter the name you want to register your account with(at least 3 characters): ");
+            userName = input.nextLine();
+
+            System.out.print("Enter your account number: ");
+            userAccountNumber = input.nextLine();
+
+            System.out.print("Choose an account Type(savings, cheque, credit): ");
+            userAccountType = input.nextLine();
+
+            System.out.print("Enter PIN (exactly 5 digit): ");
+            userPin = input.nextLine();
+        }
 
         
 
