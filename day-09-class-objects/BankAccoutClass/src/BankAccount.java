@@ -10,6 +10,16 @@ class Bank{
    public void withdraw(double withdrawValue){
     this.amount -= withdrawValue;
    }
+
+   public void balance(double viewBalance){
+    this.amount = viewBalance;
+   }
+
+   public void transfer( String recipientName, String accountNumber, double tranferValue ){
+    if (amount > 0 && accountNumber.length() >= 5){
+        this.amount -= tranferValue;
+    }
+   }
 }
 
 public class BankAccount {
