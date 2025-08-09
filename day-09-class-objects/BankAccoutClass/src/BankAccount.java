@@ -118,12 +118,12 @@ public class BankAccount {
         while (true) {
 
             //theese are our options
-            System.out.println("1. View Account");
+            System.out.println("\nokay we ready for options");
 
 
 
             //starting to close the while loop
-            System.out.print("\nWhanna make another transaction❓");
+            System.out.print("\nWanna make another transaction❓");
             String answer = input.nextLine();
             if(answer.equals("no")){
                 System.out.println("\nThank your for banking we us👾!!");
