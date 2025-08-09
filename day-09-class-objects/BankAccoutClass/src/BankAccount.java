@@ -33,6 +33,31 @@ class Bank{
 
 public class BankAccount {
     public static void main(String[] args){
-        System.out.println("hello ");
+        Scanner input = new Scanner(System.in);
+
+        //welcome message
+        System.out.println("======= Welcome to JavaBank🏧 =======");
+
+        //creating a new object
+        Bank bankActions = new Bank();
+
+        //STARTING THE WHILE LOOP
+        while (true) {
+            System.out.println("practise loop");
+
+
+
+            //starting to close the while loop
+            System.out.print("\nWhanna make another transaction❓");
+            String answer = input.nextLine();
+            if(answer.equals("no")){
+                System.out.println("\nThank your for banking we us👾!!");
+                break;
+            } else {
+                System.out.println("----- Lets do another transaction🛜 -----");
+            }
+        }
+
+        input.close();
     }
 }
