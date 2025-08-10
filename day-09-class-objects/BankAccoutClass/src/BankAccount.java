@@ -116,7 +116,7 @@ public class BankAccount {
         System.out.println("Name: " + userName);
         System.out.println("Account: " + userAccountNumber);
         System.out.println("Account Type: " + userAccountType);
-        System.out.println("Pin: " + userPin);
+        System.out.println("Pin: " + userPin + " (remember to keep this private!!!)");
         System.out.println("\n---------------- END OF ACCOUNT DETAILS --------------");
 
 
