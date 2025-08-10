@@ -103,7 +103,8 @@ public class BankAccount {
         System.out.println("Name: " + userName);
         System.out.println("Account: " + userAccountNumber);
         System.out.println("Account Type: " + userAccountType);
-
+        System.out.println("Pin: " + userPin);
+        System.out.println("\n---------------- END OF ACCOUNT DETAILS --------------");
 
         //VALIDATING THE PIN
         while (true) {
