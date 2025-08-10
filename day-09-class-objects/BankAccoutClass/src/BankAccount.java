@@ -99,7 +99,9 @@ public class BankAccount {
             }
         }
 
-        System.out.println("----------- 👾Bank Account Details🏧 ---------");
+        System.out.println("\n----------- 👾Bank Account Details🏧 ---------");
+        System.out.println("Name: " + userName);
+        System.out.println("Account: ");
 
 
         //VALIDATING THE PIN
