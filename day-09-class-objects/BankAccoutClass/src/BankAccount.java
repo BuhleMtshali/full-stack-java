@@ -8,32 +8,32 @@ class Bank{
    String pin;
 
    public void deposit(double addValue){
-    this.amount += addValue; 
+        this.amount += addValue; 
    }
 
    public void withdraw(double withdrawValue){
-    this.amount -= withdrawValue;
+        this.amount -= withdrawValue;
    }
 
    public void balance(double viewBalance){
-    this.amount = viewBalance;
+        this.amount = viewBalance;
    }
 
    public void transfer( String recipientName, String accountNumber, double tranferValue ){
-    if (this.amount > 0 && this.amount < tranferValue && accountNumber.length() >= 5){
-        this.amount -= tranferValue;
-    } else {
-        System.out.println("🚫Insufficient funds to complete the Transaction");
-    }
+        if (this.amount > 0 && this.amount < tranferValue && accountNumber.length() >= 5){
+            this.amount -= tranferValue;
+        } else {
+            System.out.println("🚫Insufficient funds to complete the Transaction");
+        }
    }
 
    public void payBills(String billName, String billAccountNumber, double billAmount){
-    if (this.amount > 0 && this.amount > billAmount){
-        this.amount -= billAmount;
-    } else {
-        System.out.println("🚫Insufficient funds to complete the Transaction");
+        if (this.amount > 0 && this.amount > billAmount){
+            this.amount -= billAmount;
+        } else {
+            System.out.println("🚫Insufficient funds to complete the Transaction");
+        }
     }
-   }
 }
 
 public class BankAccount {
@@ -99,13 +99,6 @@ public class BankAccount {
             }
         }
 
-        System.out.println("\n----------- 👾Bank Account Details🏧 ---------");
-        System.out.println("Name: " + userName);
-        System.out.println("Account: " + userAccountNumber);
-        System.out.println("Account Type: " + userAccountType);
-        System.out.println("Pin: " + userPin);
-        System.out.println("\n---------------- END OF ACCOUNT DETAILS --------------");
-
         //VALIDATING THE PIN
         while (true) {
             System.out.print("\nEnter PIN (exactly 5 digit): ");
@@ -118,6 +111,13 @@ public class BankAccount {
                 System.out.println("\n🚫Pin has to be 5-digits");
             }
         }
+
+        System.out.println("\n----------- 👾Bank Account Details🏧 ---------");
+        System.out.println("Name: " + userName);
+        System.out.println("Account: " + userAccountNumber);
+        System.out.println("Account Type: " + userAccountType);
+        System.out.println("Pin: " + userPin);
+        System.out.println("\n---------------- END OF ACCOUNT DETAILS --------------");
 
 
         //STARTING THE WHILE LOOP
