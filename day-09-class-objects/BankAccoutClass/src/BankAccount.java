@@ -101,7 +101,8 @@ public class BankAccount {
 
         System.out.println("\n----------- 👾Bank Account Details🏧 ---------");
         System.out.println("Name: " + userName);
-        System.out.println("Account: ");
+        System.out.println("Account: " + userAccountNumber);
+        System.out.println("Account Type: " + userAccountType);
 
 
         //VALIDATING THE PIN
