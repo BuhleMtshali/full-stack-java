@@ -120,7 +120,7 @@ public class BankAccount {
         System.out.println("\n---------------- END OF ACCOUNT DETAILS --------------");
 
 
-        //STARTING THE WHILE LOOP
+        //STARTING THE WHILE LOOP FOR THE MAIN LOOP
         while (true) {
 
             //theese are our options
