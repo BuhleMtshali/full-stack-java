@@ -147,6 +147,7 @@ public class BankAccount {
                     break;
             }
 
+            input.nextLine();
             //starting to close the while loop
             System.out.print("\nWanna make another transaction❓");
             String answer = input.nextLine();
