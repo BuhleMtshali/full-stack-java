@@ -132,7 +132,17 @@ public class BankAccount {
             System.out.println("\n5. Pay Bills 📨");
             System.out.println("\n6. Exit🚫");
 
+            String option = input.nextLine();
 
+            //starting the switch statement
+            switch (option) {
+                case "1":
+                    System.out.println("testing");
+                    break;
+            
+                default:
+                    break;
+            }
 
             //starting to close the while loop
             System.out.print("\nWanna make another transaction❓");
