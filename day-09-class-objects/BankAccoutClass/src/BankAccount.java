@@ -91,7 +91,7 @@ public class BankAccount {
             System.out.print("\nChoose an account Type(savings, cheque, credit): ");
             userAccountType = input.nextLine().trim().toLowerCase();
 
-            if(userAccountType.equals("savings") || userAccountNumber.equals("cheque") || userAccountNumber.equals("credit")){
+            if(userAccountType.equals("savings") || userAccountType.equals("cheque") || userAccountType.equals("credit")){
                 System.out.println("\n✅ Account Type number captured correctly");
                 break;
             } else {
