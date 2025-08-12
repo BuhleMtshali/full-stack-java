@@ -138,9 +138,13 @@ public class BankAccount {
             switch (option) {
                 case "1":
                     System.out.print("Enter the amount you want to deposit (R): ");
-                    double deposit = input.nextDouble();
-                    bankActions.deposit(deposit);
-                    System.out.println("✅ transaction was successful, new balance is R" + bankActions.amount);
+                    double depositAmount = input.nextDouble();
+                    if(depositAmount > 0){
+                        bankActions.deposit(depositAmount);
+                        System.out.println("✅ transaction was successful, new balance is R" + bankActions.amount);
+                    } else {
+                        System.out.println("🚫 Invalid amount, please try again");
+                    }
                     break;
             
                 default:
