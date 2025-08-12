@@ -137,7 +137,10 @@ public class BankAccount {
             //starting the switch statement
             switch (option) {
                 case "1":
-                    System.out.println("testing");
+                    System.out.print("Enter the amount you want to deposit (R): ");
+                    double deposit = input.nextDouble();
+                    bankActions.deposit(deposit);
+                    System.out.println("✅ transaction was successful");
                     break;
             
                 default:
