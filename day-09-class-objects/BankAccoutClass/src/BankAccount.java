@@ -66,7 +66,7 @@ public class BankAccount {
                 System.out.println("\n✅ Name captured correctly");
                 break;
             } else {
-                System.out.println("\n🚫Invalid input please try again");
+                System.out.println("\n🚫Invalid input, name has to be more than 3-characters please try again");
             }
             
         }
@@ -80,7 +80,7 @@ public class BankAccount {
                 System.out.println("\n✅ Account number captured correctly");
                 break;
             } else {
-                System.out.println("\n🚫Invalid input please try again");
+                System.out.println("\n🚫Invalid input, pleas make sure the acount number is atleast 5-digits and only includes numbers");
             }
 
         }
@@ -95,7 +95,7 @@ public class BankAccount {
                 System.out.println("\n✅ Account Type number captured correctly");
                 break;
             } else {
-                System.out.println("🚫Invalid input please try again");
+                System.out.println("🚫Invalid, please make sure you input account type correctly");
             }
         }
 
