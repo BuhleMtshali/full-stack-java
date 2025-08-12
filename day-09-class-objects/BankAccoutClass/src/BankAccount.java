@@ -140,7 +140,7 @@ public class BankAccount {
                     System.out.print("Enter the amount you want to deposit (R): ");
                     double deposit = input.nextDouble();
                     bankActions.deposit(deposit);
-                    System.out.println("✅ transaction was successful");
+                    System.out.println("✅ transaction was successful, new balance is R" + bankActions.amount);
                     break;
             
                 default:
