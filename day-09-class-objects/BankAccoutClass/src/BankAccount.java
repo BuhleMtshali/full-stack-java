@@ -122,9 +122,15 @@ public class BankAccount {
 
         //STARTING THE WHILE LOOP FOR THE MAIN LOOP
         while (true) {
+            System.out.println("\n======== 🛜Please Select an option below to start your transaction📲 ========");
 
             //theese are our options
-            System.out.println("\nokay we ready for options");
+            System.out.println("\n1. Deposit 💵");
+            System.out.println("\n2. Withdraw ➖");
+            System.out.println("\n3. View Balance 📝");
+            System.out.println("\n4. Transfer Money ");
+            System.out.println("\n5. Pay Bills 📨");
+            System.out.println("\n6. Exit🚫");
 
 
 
