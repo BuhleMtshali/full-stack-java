@@ -170,6 +170,20 @@ public class BankAccount {
                 case "4":
                     System.out.print("Enter the Recipient Name: ");
                     String recipientName = input.nextLine();
+                    System.out.print("Enter the Receipent's Account Number: ");
+                    String recientAccountNumber = input.nextLine();
+                    System.out.print("Enter the amount to send: ");
+                    double recipientAmount = input.nextDouble();
+
+                    if(recientAccountNumber.length() > 1 && recipientName.length() > 1){
+                        bankActions.transfer(recipientName, recientAccountNumber, recipientAmount);
+                        System.out.println("======== 📝 Proof of Payment =======");
+                        System.out.println("=== Recepient Name: " + recipientName + " =======");
+                        System.out.println("===== Receipient Account Number: " + recientAccountNumber + " ======");
+                        System.out.println("==== Amount Sent R: " + recipientAmount + " =====");
+                        System.out.println("===== Account Balance R: " + bankActions.amount);
+                    }
+                   
                     break;
 
                 default:
