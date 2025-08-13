@@ -174,15 +174,20 @@ public class BankAccount {
                     String recientAccountNumber = input.nextLine();
                     System.out.print("Enter the amount to send: ");
                     double recipientAmount = input.nextDouble();
-
-                    if(recientAccountNumber.length() > 1 && recipientName.length() > 1){
-                        bankActions.transfer(recipientName, recientAccountNumber, recipientAmount);
-                        System.out.println("======== 📝 Proof of Payment =======");
+                    if(recipientAmount > 0){
+                         bankActions.transfer(recipientName, recientAccountNumber, recipientAmount);
+                         System.out.println("======== 📝 Proof of Payment =======");
                         System.out.println("=== Recepient Name: " + recipientName + " =======");
                         System.out.println("===== Receipient Account Number: " + recientAccountNumber + " ======");
                         System.out.println("==== Amount Sent R: " + recipientAmount + " =====");
                         System.out.println("===== Account Balance R: " + bankActions.amount);
+                    } else {
+                        System.out.println("🚫 Invalid amount, please try again");
                     }
+                   
+        
+                       
+                        
                    
                     break;
 
