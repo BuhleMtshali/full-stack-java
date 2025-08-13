@@ -122,7 +122,7 @@ public class BankAccount {
 
         //STARTING THE WHILE LOOP FOR THE MAIN LOOP
         while (true) {
-            System.out.println("\n======== 🛜Please Select an option below to start your transaction📲 ========");
+            System.out.println("\n======== 🛜 Please Select an option below to start your transaction📲 ========");
 
             //theese are our options
             System.out.println("\n1. Deposit 💵");
@@ -164,7 +164,7 @@ public class BankAccount {
                 //CASE 3 VIEW BALANCE
                 case "3":
                     bankActions.balance(bankActions.amount);   
-                    System.out.println("Current Balance: " + bankActions.amount); 
+                    System.out.println("Current Balance: R" + bankActions.amount); 
             
                 default:
                     break;
