@@ -19,9 +19,9 @@ class Bank{
         this.amount = viewBalance;
    }
 
-   public void transfer( String recipientName, String accountNumber, double tranferValue ){
-        if (this.amount > 0 && this.amount < tranferValue && accountNumber.length() >= 5){
-            this.amount -= tranferValue;
+   public void transfer( String recipientAccountHolder, String recipientAccountNumber, double recipientTranferValue ){
+        if (this.amount > 0 && this.amount < recipientTranferValue && accountNumber.length() >= 5){
+            this.amount -= recipientTranferValue;
         } else {
             System.out.println("🚫Insufficient funds to complete the Transaction");
         }
@@ -169,12 +169,8 @@ public class BankAccount {
                 
                 case "4":
                     System.out.print("Enter the Recipient Name: ");
-                    String recipeientName = input.nextLine();
-                    System.out.print("Enter the account Number for the receipent: ");
-                    String recipientAccountNumber = input.nextLine();
-                    System.out.print("Enter the amount you want to send to " + recipeientName + ": ");
-                    double recipeientAmount = input.nextDouble();
-                    bankActions.transfer(recipeientName, recipientAccountNumber, recipeientAmount);
+                    String recipientName = input.nextLine();
+                    break;
 
                 default:
                     break;
