@@ -161,7 +161,10 @@ public class BankAccount {
                     }
                     break;
 
-
+                //CASE 3 VIEW BALANCE
+                case "3":
+                    bankActions.balance(bankActions.amount);   
+                    System.out.println("Current Balance: " + bankActions.amount); 
             
                 default:
                     break;
