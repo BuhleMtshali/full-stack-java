@@ -174,7 +174,7 @@ public class BankAccount {
                     String recipientAccountNumber = input.nextLine();
                     System.out.print("Enter the amount you want to send to " + recipeientName + ": ");
                     double recipeientAmount = input.nextDouble();
-
+                    bankActions.transfer(recipeientName, recipientAccountNumber, recipeientAmount);
 
                 default:
                     break;
