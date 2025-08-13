@@ -166,9 +166,16 @@ public class BankAccount {
                     bankActions.balance(bankActions.amount);   
                     System.out.println("Current Balance: R" + bankActions.amount); 
                     break;
+                
+                case "4":
+                    System.out.print("Enter the Recipient Name: ");
+                    String recipeientName = input.nextLine();
+                    System.out.print("Enter the account Number for the receipent: ");
+                    String recipientAccountNumber = input.nextLine();
+                    System.out.print("Enter the amount you want to send to " + recipeientName + ": ");
+                    double recipeientAmount = input.nextDouble();
 
 
-                    
                 default:
                     break;
             }
