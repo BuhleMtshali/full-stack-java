@@ -165,7 +165,10 @@ public class BankAccount {
                 case "3":
                     bankActions.balance(bankActions.amount);   
                     System.out.println("Current Balance: R" + bankActions.amount); 
-            
+                    break;
+
+
+                    
                 default:
                     break;
             }
