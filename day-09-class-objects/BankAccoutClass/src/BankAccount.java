@@ -185,10 +185,6 @@ public class BankAccount {
                         System.out.println("🚫 Invalid amount, please try again");
                     }
                    
-        
-                       
-                        
-                   
                     break;
 
                 default:
