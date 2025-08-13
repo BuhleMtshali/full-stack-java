@@ -136,6 +136,8 @@ public class BankAccount {
 
             //starting the switch statement
             switch (option) {
+
+                //CASE 1 FOR DEPOSIT
                 case "1":
                     System.out.print("Enter the amount you want to deposit (R): ");
                     double depositAmount = input.nextDouble();
@@ -146,6 +148,20 @@ public class BankAccount {
                         System.out.println("🚫 Invalid amount, please try again");
                     }
                     break;
+
+                //CASE 2 WITHDRAAW
+                case "2":
+                    System.out.print("Enter the amount you want to withdraw (R): ");
+                    double withdrawAmount = input.nextDouble();
+                    if(withdrawAmount > 0 && withdrawAmount < bankActions.amount){
+                        bankActions.withdraw(withdrawAmount);
+                        System.out.println("✅ transaction was successful, new balance is R" + bankActions.amount);
+                    } else {
+                        System.out.println("🚫 Invalid amount, please try again");
+                    }
+                    break;
+
+
             
                 default:
                     break;
