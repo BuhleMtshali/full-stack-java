@@ -20,7 +20,7 @@ class Bank{
    }
 
    public void transfer( String recipientAccountHolder, String recipientAccountNumber, double recipientTranferValue ){
-        if (this.amount > 0 && this.amount < recipientTranferValue && accountNumber.length() >= 5){
+        if (this.amount > recipientTranferValue){
             this.amount -= recipientTranferValue;
         } else {
             System.out.println("🚫Insufficient funds to complete the Transaction");
@@ -174,7 +174,7 @@ public class BankAccount {
                     String recientAccountNumber = input.nextLine();
                     System.out.print("Enter the amount to send: ");
                     double recipientAmount = input.nextDouble();
-                    if(recipientAmount > 0){
+                    if(recipientAmount < bankActions.amount){
                          bankActions.transfer(recipientName, recientAccountNumber, recipientAmount);
                          System.out.println("======== 📝 Proof of Payment =======");
                         System.out.println("=== Recepient Name: " + recipientName + " =======");
