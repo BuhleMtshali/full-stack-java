@@ -208,6 +208,10 @@ public class BankAccount {
                     } else {
                         System.out.println("🚫 Invalid amount, please try again");
                     }
+                    break;
+
+                //CASE 6
+                
 
                 default:
                     break;
