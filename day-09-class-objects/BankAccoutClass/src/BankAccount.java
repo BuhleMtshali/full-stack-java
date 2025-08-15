@@ -211,9 +211,12 @@ public class BankAccount {
                     break;
 
                 //CASE 6
-                
+                case "6":
+                    System.out.println("\nThank your for banking we us👾!!");
+                    break;
 
                 default:
+                    System.out.println("🚫Invalid input, please try again");
                     break;
             }
 
