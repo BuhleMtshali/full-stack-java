@@ -191,14 +191,23 @@ public class BankAccount {
 
                 //PAYING BLLS
                 case "5":
-                    System.out.print("Enter your name: ");
-                    String name = input.nextLine();
                     System.out.print("Enter your bill entity name: ");
                     String billName = input.nextLine();
                     System.out.print("Enter your reference number: ");
                     String referenceNumber = input.nextLine();
                     System.out.print("Enter the amount you want to pay: ");
                     double paymentAmount = input.nextDouble();
+                    if(paymentAmount < bankActions.amount){
+                        bankActions.transfer(billName, referenceNumber, paymentAmount);
+                        System.out.println("\n======== 📝 Proof of Payment =======");
+                        System.out.println("\n=== Bill Name: " + billName + " =======");
+                        System.out.println("\n===== Bill Reference Number: " + referenceNumber + " ======");
+                        System.out.println("\n==== Amount Sent R: " + paymentAmount + " =====");
+                        System.out.println("\n===== Account Balance R: " + bankActions.amount);
+                        System.out.println("\n---------------------END----------------------");
+                    } else {
+                        System.out.println("🚫 Invalid amount, please try again");
+                    }
 
                 default:
                     break;
