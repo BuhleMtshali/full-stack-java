@@ -130,7 +130,6 @@ public class BankAccount {
             System.out.println("\n3. View Balance 📝");
             System.out.println("\n4. Transfer Money ");
             System.out.println("\n5. Pay Bills 📨");
-            System.out.println("\n6. Exit🚫");
 
             String option = input.nextLine();
 
@@ -208,11 +207,6 @@ public class BankAccount {
                     } else {
                         System.out.println("🚫 Invalid amount, please try again");
                     }
-                    break;
-
-                //CASE 6
-                case "6":
-                    System.out.println("\nThank your for banking we us👾!!");
                     break;
 
                 default:
