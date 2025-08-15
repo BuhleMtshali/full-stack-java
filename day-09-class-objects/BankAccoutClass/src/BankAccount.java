@@ -189,6 +189,17 @@ public class BankAccount {
                    
                     break;
 
+                //PAYING BLLS
+                case "5":
+                    System.out.print("Enter your name: ");
+                    String name = input.nextLine();
+                    System.out.print("Enter your bill entity name: ");
+                    String billName = input.nextLine();
+                    System.out.print("Enter your reference number: ");
+                    String referenceNumber = input.nextLine();
+                    System.out.print("Enter the amount you want to pay: ");
+                    double paymentAmount = input.nextDouble();
+
                 default:
                     break;
             }
