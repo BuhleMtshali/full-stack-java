@@ -19,6 +19,6 @@ public class Constructors {
        student student1 = new student("Buhle", "MTSZAN012", 230);
        System.out.println("Name: " + student1.name);
        System.out.println("Student Number: " + student1.studentNumber);
-       System.out.println("Outstanding fee: " + student1.studentFee);
+       System.out.println("Outstanding fee: R" + student1.studentFee);
     }
 }
