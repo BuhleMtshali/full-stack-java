@@ -20,5 +20,6 @@ public class Constructors {
        System.out.println("Name: " + student1.name);
        System.out.println("Student Number: " + student1.studentNumber);
        System.out.println("Outstanding fee: R" + student1.studentFee);
+       System.out.println("=========================");
     }
 }
