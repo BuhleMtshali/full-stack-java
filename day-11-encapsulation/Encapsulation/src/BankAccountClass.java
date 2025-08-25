@@ -3,6 +3,11 @@ class Bank{
     private String name;
     private String accountNumber;
     private double balance;
+
+    //SETTER METHOD TO CONTROL DATA THAT GOES IN
+    public void setName(String newName){
+        name = newName;
+    }
 }
 
 
