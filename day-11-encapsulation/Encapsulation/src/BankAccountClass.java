@@ -41,12 +41,14 @@ class Bank{
 
 }
 
-
-
-
-
 public class BankAccountClass {
     public static void main(String[] args){
-        System.out.println("hello");
+        Bank bank1 = new Bank();
+
+        bank1.setName("Buhle");
+        bank1.setAccountNumber("23457781");
+        bank1.setBalance(234.56);
+
+        System.out.println(bank1.getName() + "'s account number is " + bank1.getAccountNumber() + " and her Bank balance is " + bank1.getBalance());
     }
 }
