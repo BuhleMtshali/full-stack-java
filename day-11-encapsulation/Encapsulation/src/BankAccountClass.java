@@ -8,6 +8,16 @@ class Bank{
     public void setName(String newName){
         name = newName;
     }
+
+    public void setAccountNumber(String newAccountNumber){
+        if (newAccountNumber.length() > 0){
+            accountNumber = newAccountNumber;
+        } else {
+            System.out.println("🚫Invalid account number!");
+        }
+    }
+
+
 }
 
 
