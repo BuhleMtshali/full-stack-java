@@ -25,6 +25,19 @@ class Bank{
         }
     }
 
+    //GETTER METHODS FOR CONTROLLING DATA THAT COMES OUT
+    public String getName(){
+        return name;
+    }
+
+    public String getAccountNumber(){
+        return accountNumber;
+    }
+
+    public double getBalance(){
+        return balance;
+    }
+
 
 }
 
