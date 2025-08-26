@@ -16,9 +16,11 @@ class miniVehicle extends Vehicle{
 }
 
 
-
 public class VehicleInheritance {
     public static void main(String[] args){
-        System.out.println("hello");
+        miniVehicle mini = new miniVehicle();
+        mini.name = "Toyota";
+        mini.model = "2021";
+        mini.car();
     }
 }
