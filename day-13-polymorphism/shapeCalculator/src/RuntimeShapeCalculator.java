@@ -1,3 +1,4 @@
+//RUNTIME EXAMPLE
 class Shape{
     public void calculate(){
         System.out.println("original method");
