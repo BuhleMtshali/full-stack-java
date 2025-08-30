@@ -12,6 +12,10 @@ class shapeOne extends Shape{
 
 public class RuntimeShapeCalculator {
     public static void main(String[] args){
-        System.out.println("hello");
+        Shape shape1 = new Shape();
+        Shape shape2 = new shapeOne();
+
+        shape1.calculate();
+        shape2.calculate();
     }
 }
