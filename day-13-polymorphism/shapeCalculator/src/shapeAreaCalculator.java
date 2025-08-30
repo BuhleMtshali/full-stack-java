@@ -1,4 +1,4 @@
-//RUNTIME EXAMPLE
+//COMPILETIME EXAMPLE
 class CalculateArea{
 
     //TWO PARAMETERS
