@@ -18,5 +18,6 @@ public class shapeAreaCalculator {
         CalculateArea calc = new CalculateArea();
         System.out.println("Example with 2 parameters: " + calc.add(3.5, 5.8));
         System.out.println("Example with Three parameters: " + calc.add(6.8, 9.9, 12.4));
+        System.out.println("ending");
     }
 }
